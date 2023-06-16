@@ -45,20 +45,20 @@ const Today = () => {
                     <div className="carousel-inner" id='carousel'>
                         <div className='carousel-caption' style={{ zIndex: '10' }}>
                             <div className="d-flex justify-content-center">
-                                <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" value={search} onChange={(e) => { setSearch(e.target.value) }} />
+                                <input className="form-control " type="search" placeholder="Search" aria-label="Search" value={search} onChange={(e) => { setSearch(e.target.value) }} />
                             </div>
                         </div>
                         <div className="carousel-item active">
-                            <img src="https://source.unsplash.com/random/900x350/?scenary" className="d-block w-100 h-40" style={{ filter: 'brightness(30%' }} alt="..." />
+                            <img src="https://source.unsplash.com/random/900x400/?scenary" className="d-block w-100 h-40" style={{ filter: 'brightness(30%' }} alt="..." />
                         </div>
                         <div className="carousel-item">
-                            <img src="https://source.unsplash.com/random/900x350/?webdesign" className="d-block w-100 h-40" style={{ filter: 'brightness(25%' }} alt="..." />
+                            <img src="https://source.unsplash.com/random/900x400/?webdesign" className="d-block w-100 h-40" style={{ filter: 'brightness(25%' }} alt="..." />
                         </div>
                         <div className="carousel-item">
-                            <img src="https://source.unsplash.com/random/900x350/?hacking" className="d-block w-100 h-40" style={{ filter: 'brightness(30%' }} alt="..." />
+                            <img src="https://source.unsplash.com/random/900x400/?hacking" className="d-block w-100 h-40" style={{ filter: 'brightness(30%' }} alt="..." />
                         </div>
                         <div className="carousel-item">
-                            <img src="https://source.unsplash.com/random/900x350/?nature" className="d-block w-100 h-40" style={{ filter: 'brightness(30%' }} alt="..." />
+                            <img src="https://source.unsplash.com/random/900x400/?nature" className="d-block w-100 h-40" style={{ filter: 'brightness(30%' }} alt="..." />
                         </div>
                     </div>
                     <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">

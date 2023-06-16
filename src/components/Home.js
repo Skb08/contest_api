@@ -78,7 +78,7 @@ const Home = () => {
             <div className="" style={{ background: "linear-gradient(90deg, rgba(13,129,133,1) 0%, rgba(22,228,174,1) 41%, rgba(18,150,155,1) 100%)" }}>
                 <div className="container" >
                     <div className="m-4 text-center ">
-                        <h2 className="font-weight-bold text-decoration-underline ">CONTEST DETAILS</h2>
+                        <h2 className="font-weight-bold text-decoration-underline ">CONTEST CALENDER</h2>
                     </div>
                     {users && (
                         <ul className='row row-cols-1 row-cols-md-2 row-cols-lg-3 g-12'>
