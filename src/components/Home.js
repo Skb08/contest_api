@@ -31,7 +31,7 @@ const Home = () => {
         const minutes = Math.floor(hoursms / (60));
         const minutesms = ms % (60);
         const sec = Math.floor(minutesms);
-        return days + ":" + hours + ":" + minutes + ":" + sec;
+        return days + "day " + hours + "h " + minutes + "min " + sec+ "sec";
     }
 
 
@@ -89,7 +89,7 @@ const Home = () => {
 
                                         <div key={user.id} >
 
-                                            <div className="card m-3 mt-3 shadow p-3 mb-5 bg-white rounded" style={{background:"linear-gradient(90deg, rgba(166,239,134,1) 0%, rgba(247,246,137,1) 52%, rgba(166,239,134,1) 100%)", width: "18rem", height: "550px" }}>
+                                            <div className="card m-3 mt-3 shadow p-3 mb-5 bg-white rounded" style={{background:"linear-gradient(90deg, rgba(166,239,134,1) 0%, rgba(247,246,137,1) 52%, rgba(166,239,134,1) 100%)", width: "18rem", height: "540px" }}>
 
                                             {(user.site === "CodeChef") ?<img src="https://image.pngaaa.com/788/4464788-middle.png" alt='suraj1' className="card-img-top text-dark" style={{ width: "100%", height: "140px", objectFit: "fill" }} />
                                                 :(user.site === "HackerRank")?<img src="https://e7.pngegg.com/pngimages/891/900/png-clipart-logo-hackerrank-where-s-weed-java-hacker.png" 
