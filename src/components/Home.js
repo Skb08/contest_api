@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from "react"
 import Navbar from "./Navbar";
 
-// leetcode https://leetcode.com/static/images/LeetCode_Sharing.png
-// heackerearth https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdax8uhfI-79JCqHJ0eR35mCocFxHidYZlFkeWqYchKil2bb5yPMu1PpolSOKynJtY0leSCBqqzRM&usqp=CAU&ec=48665701
 
 const Home = () => {
 
@@ -18,8 +16,6 @@ const Home = () => {
                 setUsers(data)
                 console.log(data);
                 console.log(data.length);
-
-
             })
     }
 
@@ -62,8 +58,7 @@ const Home = () => {
                         </div>
                         <div className="carousel-item">
                             <img src="https://source.unsplash.com/random/900x400/?nature" className="d-block w-100 h-40" style={{ filter: 'brightness(30%' }} alt="..." />
-                        </div>
-                        
+                        </div>    
                     </div>
                     <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
                         <span className="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -75,9 +70,9 @@ const Home = () => {
                     </button>
                 </div>
             </div>
-            <div className="" style={{ background: "linear-gradient(90deg, rgba(13,129,133,1) 0%, rgba(22,228,174,1) 41%, rgba(18,150,155,1) 100%)" }}>
+            <div className="" style={{marginTop:"-1.2rem", background: "linear-gradient(90deg, rgba(13,129,133,1) 0%, rgba(22,228,174,1) 41%, rgba(18,150,155,1) 100%)" }}>
                 <div className="container" >
-                    <div className="m-4 text-center ">
+                    <div className="text-center" style={{}}>
                         <h2 className="font-weight-bold text-decoration-underline ">CONTEST CALENDER</h2>
                     </div>
                     {users && (
@@ -88,7 +83,6 @@ const Home = () => {
                                     return (
 
                                         <div key={user.id} >
-
                                             <div className="card m-3 mt-3 shadow p-3 mb-5 bg-white rounded" style={{background:"linear-gradient(90deg, rgba(166,239,134,1) 0%, rgba(247,246,137,1) 52%, rgba(166,239,134,1) 100%)", width: "18rem", height: "540px" }}>
 
                                             {(user.site === "CodeChef") ?<img src="https://image.pngaaa.com/788/4464788-middle.png" alt='suraj1' className="card-img-top text-dark" style={{ width: "100%", height: "140px", objectFit: "fill" }} />
@@ -104,9 +98,7 @@ const Home = () => {
                                                  alt='suraj7' className="card-img-top text-dark" style={{ width: "100%", height: "140px", objectFit: "fill" }} />
                                                 :""}
                                                 
-
                                                 <div className="card-body text-dark">
-
                                                     <h6 className="card-title ml-1" >{user.name}</h6>
                                                     <h5 className="card-title ml-1" >{user.site}</h5>
                                                     <h6 className="card-title ml-1" >{"Duration: "}{dhm(user.duration)}</h6>
@@ -114,23 +106,20 @@ const Home = () => {
                                                     <h6 className="card-title ml-1" >{"End: "}{user.end_time}</h6>
                                                     <h6 className="card-title ml-1" >{"Status: "}{user.status}</h6>
                                                     <h6 className="card-title ml-1" >{"Today: "}{user.in_24_hours}</h6>
-
                                                     <hr />
                                                     <div className='container w-100'>
-
-                                                        <a href={user.url}><button type="button" className="btn btn-primary m-2" style={{ width: "5rem" }}>Link</button></a>
-
+                                                        <a href={user.url}>
+                                                            <button type="button" className="btn btn-primary m-2" style={{ width: "5rem" }}>Link</button>
+                                                        </a>
                                                     </div>
-
                                                 </div>
                                             </div>
                                         </div>
                                     );
-                                })}
-
+                                })
+                            }
                         </ul>
                     )}
-
                 </div>
             </div>
         </>

@@ -14,9 +14,6 @@ const Today = () => {
             .then(data => {
                 setUsers(data)
                 console.log(data);
-
-
-
             })
     }
 
@@ -71,9 +68,9 @@ const Today = () => {
                     </button>
                 </div>
             </div>
-            <div className="\" style={{ background: "linear-gradient(90deg, rgba(13,129,133,1) 0%, rgba(22,228,174,1) 41%, rgba(18,150,155,1) 100%)" }}>
+            <div className="" style={{marginTop:"-1.2rem", background: "linear-gradient(90deg, rgba(13,129,133,1) 0%, rgba(22,228,174,1) 41%, rgba(18,150,155,1) 100%)" }}>
                 <div className="container" >
-                    <div className="m-4 text-center ">
+                    <div className="m-4 text-center" style={{}}>
                         <h2 className="font-weight-bold text-decoration-underline ">CONTEST CONTINUE</h2>
                     </div>
                     {users && (
