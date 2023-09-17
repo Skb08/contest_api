@@ -13,7 +13,7 @@ const Today = () => {
             })
             .then(data => {
                 setUsers(data)
-                console.log(data);
+                // console.log(data);
             })
     }
 

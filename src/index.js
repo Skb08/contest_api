@@ -6,7 +6,7 @@ import App from './App';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
+  
     <Auth0Provider
     domain="dev-ggmnz02afylauvjq.us.auth0.com"
     clientId="wFdTkHExAPQcBpImHxshqWYIVQ4Etj1S"
@@ -16,7 +16,7 @@ root.render(
   >
     <App />
   </Auth0Provider>
-  </React.StrictMode>
+  
 );
 
 

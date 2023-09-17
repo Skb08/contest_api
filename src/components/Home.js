@@ -14,8 +14,8 @@ const Home = () => {
             })
             .then(data => {
                 setUsers(data)
-                console.log(data);
-                console.log(data.length);
+                // console.log(data);
+                // console.log(data.length);
             })
     }
 
